@@ -1,5 +1,11 @@
 :root{
   --header-height: 50px;
+  --footer-height: 21px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -11,40 +17,41 @@ a{
   color: black;
   }
 
-.Header{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: var(--header-height);
+nav{
   background-color: orange;
   color: white;
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
 }
 
-.childe{
-  margin-top: 10px;
-  border: 1px solid red;
-  width: auto;
-  float: left;  
+.menu-selection{
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: var(--header-height);
 }
 
-#logo{
-  width: 200px;
+.menu-selection a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 20px;
+  color: black;
 }
 
-#dark_mode{
-  float: right;
+.content{
+  margin-top:var(--header-height);
+  margin-bottom:var(--footer-height);
 }
 
-.Content{
-  margin-top: calc(var(--header-height) + 10px)
-}
-
-.Footer{
+.footer{
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: var(--footer-height);
   background-color: black;
   color: white;
 }
