@@ -1,8 +1,50 @@
+:root{
+  --header-height: 50px;
+}
+
 body{
-  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a{ 
-  text-decoration: none; 
-  color: white;
+  text-decoration: underline; 
+  color: black;
   }
+
+.Header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: orange;
+  color: white;
+}
+
+.childe{
+  margin-top: 10px;
+  border: 1px solid red;
+  width: auto;
+  float: left;  
+}
+
+#logo{
+  width: 200px;
+}
+
+#dark_mode{
+  float: right;
+}
+
+.Content{
+  margin-top: calc(var(--header-height) + 10px)
+}
+
+.Footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
