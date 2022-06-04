@@ -1,6 +1,5 @@
 :root{
   --header-height: 50px;
-  --title-height: 150px;
   --footer-height: 21px;
 }
 
@@ -82,7 +81,8 @@ nav{
 }
 
 .title-wrap{
-  height: 500px;
+  height: calc(100vh - var(--header-height));
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
