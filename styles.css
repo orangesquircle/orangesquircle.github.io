@@ -1,11 +1,14 @@
 :root{
   --header-height: 50px;
+  --title-height: 150px;
   --footer-height: 21px;
 }
 
 *{
   margin: 0;
   padding: 0;
+  background-color: #2C2B30;
+  color: white;
 }
 
 body{
@@ -15,35 +18,83 @@ body{
 a{ 
   text-decoration: underline; 
   color: black;
-  }
-
-nav{
-  background-color: orange;
-  color: white;
-  width: 100%;
-  height: var(--header-height);
-  position: fixed;
-  top: 0;
 }
 
-.menu-selection{
+.margined{
+  --margined-content-width: 1000px; /*larger number = smaller margin*/
+  --margin-left: auto; /*can be set to pixel*/
+  margin: 0 auto 0 var(--margin-left);
+  width: var(--margined-content-width);
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  /*
+  background-image: url("assets/header\ background.png");
+  background-size: cover;
+  background-position: center center;
+  */
+  background-color: black;
+}
+
+nav{
+
+}
+
+.menu li{
   list-style: none;
-  display: inline-block;
   float: left;
+  display: inline-block;
   line-height: var(--header-height);
 }
 
-.menu-selection a{
+.menu li a{
   display: block;
   text-decoration: none;
   font-size: 20px;
   padding: 0 20px;
-  color: black;
+  color: white;
+  background-color: black;
+}
+
+.menu li a:hover{
+  color: #ffa500;
+  background-color: #2C2B30;
+}
+
+.menu li a:active{
+  color: white;
+}
+
+.home-blob{
+  object-fit: inherit;
+  width: auto;
+  background-color: transparent;
 }
 
 .content{
-  margin-top:var(--header-height);
-  margin-bottom:var(--footer-height);
+  margin-top: calc(var(--header-height));
+  margin-bottom: calc(var(--footer-height) *2);
+}
+
+.title-wrap{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-wrap h1{
+  text-align: center;
+  background-color: transparent;
+}
+
+.text{
+  margin-top: 100px;
 }
 
 .footer{
@@ -54,4 +105,21 @@ nav{
   height: var(--footer-height);
   background-color: black;
   color: white;
+}
+
+#home .title-wrap{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.35), 
+    rgba(0, 0, 0, 0.2)
+  ),
+  url(assets/header\ background.png);
+  background-size: cover;
+}
+
+#home .title-wrap h1{
+  color: black;
+}
+
+#rick{
+  width: 100%;
 }
