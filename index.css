@@ -1,0 +1,8 @@
+.title-wrap{
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(assets/sawcon\ industries.png);
+    background-size: cover;
+}

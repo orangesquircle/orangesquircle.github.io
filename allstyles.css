@@ -9,6 +9,8 @@
   color: white;
 }
 
+/*FORMAT STYLES*/
+
 .center{
   display: flex;
   justify-content: center;
@@ -29,13 +31,49 @@ a{
   color: black;
 }
 
-.margined{
+.hmargined{
   --margined-content-width: 1000px; /*larger number = smaller margin*/
   --margin-left: auto; /*can be set to pixel*/
   margin: 0 auto 0 var(--margin-left);
   width: var(--margined-content-width);
 }
 
+.vmargined{
+  margin-top: 25px;
+}
+
+.row{
+  display: flex;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1{
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.col2{
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 15px;
+}
+
+.col3{
+  float: left;
+  width: 33%;
+  height: auto;
+  padding: 15px;
+}
+
+/*HEADER STYLES*/
 .header{
   position: fixed;
   width: 100%;
@@ -74,30 +112,32 @@ nav{
   color: white;
 }
 
+/*
 .home-blob{
   object-fit: inherit;
   width: auto;
   background-color: transparent;
 }
+*/
+
+/*CONTENT STYLES*/
 
 .content{
   margin-top: calc(var(--header-height));
-  margin-bottom: calc(var(--footer-height) *2);
+  margin-bottom: calc(var(--footer-height) + 50px);
 }
 
 .title-wrap{
   height: calc(100vh - var(--header-height) - var(--footer-height));
   width: 100%;
-  background-color: red;
 }
 
 .title-wrap div{
   position: inherit;
 }
 
-.text{
-  margin-top: 100px;
-}
+
+/*FOOTER STYLES*/
 
 .footer{
   position: fixed;
@@ -107,17 +147,5 @@ nav{
   height: var(--footer-height);
   background-color: black;
   color: white;
+  font-size: 12px;
 }
-
-#home .title-wrap{
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.35), 
-    rgba(0, 0, 0, 0.2)
-  ),
-  url(assets/sawcon\ industries.png);
-  background-size: cover;
-}
-
-#rick{
-  width: 100%;
-} 
