@@ -1,10 +1,10 @@
 Czech List:
 ===========
-- [x] Pages
-- [x] Heading
-- [x] Footer
-- [x] Title banner
-- [x] Columns and stuff
+~~ - [x] Pages ~~
+~~ - [x] Heading ~~
+~~ - [x] Footer ~~
+~~ - [x] Title banner ~~
+~~ - [x] Columns and stuff ~~
 - [ ] Add separators
 - [ ] Add the big blob
 - [ ] Add buttons and links
