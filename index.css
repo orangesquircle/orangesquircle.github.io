@@ -1,8 +1,26 @@
 .title-wrap{
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.35), 
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(assets/sawcon\ industries.png);
-    background-size: cover;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.35), 
+    rgba(0, 0, 0, 0.2)
+  ),
+  url(assets/sawcon\ industries.png);
+}
+
+@media screen and (max-width: 400px) {
+  .title-wrap h1 span{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer p{
+    font-size: 8px;
+  }
+}
+
+@media (max-aspect-ratio: 1/1){
+  .title-wrap{
+    max-height: 50vh;
+    background-color: blue;
+  }
 }
