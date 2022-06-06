@@ -101,3 +101,7 @@
   width: 30px;
   height: 30px;
 }
+
+.header, .footer {
+  z-index: 1;
+}

@@ -114,7 +114,7 @@ hr.solid{
 
 /*HEADER STYLES*/
 .header{
-  position: fixed;
+  position: sticky;
   width: 100%;
   height: var(--header-height);
   top: 0;
@@ -162,13 +162,12 @@ nav{
 /*CONTENT STYLES*/
 
 .content{
-  margin-top: calc(var(--header-height));
   margin-bottom: calc(var(--footer-height) + 50px);
   width: 100%;
 }
 
 .title-wrap{
-  height: calc(100vh - var(--header-height) - var(--footer-height));
+  height: calc(100vh - var(--header-height));
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -188,7 +187,6 @@ nav{
 /*FOOTER STYLES*/
 
 .footer{
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
