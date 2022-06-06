@@ -174,13 +174,15 @@ nav{
   background-position: center;
 }
 
-.title-wrap div{
-  position: inherit;
-  width: inherit;
-}
-
 .title-wrap h1{
   word-break: break-all;
+}
+
+.title-wrap .button-wrap{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-top: 25px;
 }
 
 /*FOOTER STYLES*/

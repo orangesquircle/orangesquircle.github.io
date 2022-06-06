@@ -21,6 +21,83 @@
 @media (max-aspect-ratio: 1/1){
   .title-wrap{
     max-height: 50vh;
-    background-color: blue;
   }
+}
+
+.highliht{
+  border: solid 1px #ffa500;
+}
+
+#blob{
+  height: 50px;
+  margin-bottom: -15px;
+}
+
+.fa{
+  margin: 0 30px 0 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 2px;
+  text-align: center;
+  text-decoration: none;
+  background-color: orange;
+  border-radius: 30%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa#discord {
+  background: #5866ef;
+  background-image: url(assets/ic-discord.svg);
+  background-size: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fa#youtube {
+  background: #ff0000;
+  background-image: url(assets/ic-youtube.svg);
+  background-size: 40%;
+  background-position: 13px center;
+  background-repeat: no-repeat;
+}
+
+.fa#instagram {
+  background: #E1306C;
+  background-image: url(assets/ic-instagram.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fa#twitter {
+  background: #1da1f2;
+  background-image: url(assets/ic-twitter.svg);
+  background-size: 65%;
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+}
+
+.fa#reddit {
+  background: #FF5700;
+  background-image: url(assets/ic-reddit.svg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 520px) {
+  .fa{
+    margin: 0 10px 0 10px;
+  }
+}
+
+.fa img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
